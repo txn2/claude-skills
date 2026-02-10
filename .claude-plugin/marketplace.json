@@ -1,0 +1,30 @@
+{
+  "name": "txn2-claude-skills",
+  "owner": {
+    "name": "txn2",
+    "url": "https://github.com/txn2"
+  },
+  "metadata": {
+    "description": "Claude Code skills for Go development, verification, and DevOps workflows",
+    "version": "1.0.0",
+    "pluginRoot": "./plugins"
+  },
+  "plugins": [
+    {
+      "name": "go-verify",
+      "source": "./plugins/go-verify",
+      "description": "Audit and scaffold Go projects to AI-Verified Development standards",
+      "version": "1.0.0",
+      "author": {
+        "name": "Craig Johnston",
+        "url": "https://imti.co"
+      },
+      "homepage": "https://imti.co/go-ai-verified-development/",
+      "repository": "https://github.com/txn2/claude-skills",
+      "license": "MIT",
+      "keywords": ["go", "golang", "testing", "linting", "verification", "ai-verified"],
+      "category": "code-quality",
+      "tags": ["golangci-lint", "mutation-testing", "coverage"]
+    }
+  ]
+}
