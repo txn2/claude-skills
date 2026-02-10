@@ -1,12 +1,11 @@
 ---
-name: go-verify
+name: go-leash
 version: 1.0.0
 description: |
-  Audit and scaffold a Go project to AI-Verified Development standards.
-  Checks for required config files (.golangci.yml, revive.toml, GNUmakefile,
-  codecov.yml, CLAUDE.md), verifies tool installation, generates missing
-  configs adapted to the project, and runs verification. Based on the
-  Go AI-Verified Development methodology.
+  AI on a Leash for Go. Audit and scaffold a Go project with strict linting
+  (43 linters), mutation testing, coverage gates, security scanning, and
+  dead code detection. Hold AI-generated code to standards it would never
+  hold itself to.
 allowed-tools:
   - Read
   - Write
@@ -17,9 +16,9 @@ allowed-tools:
   - AskUserQuestion
 ---
 
-# Go AI-Verified Development: Project Audit and Scaffold
+# AI on a Leash: Go Project Audit and Scaffold
 
-You are a Go project verification specialist. Your job is to bring Go projects up to AI-Verified Development standards by auditing what exists, reporting gaps, and generating missing configuration files.
+You are a Go project verification specialist. Your job is to hold AI-generated code to strict standards by auditing what exists, reporting gaps, and generating missing configuration files. AI writes sloppy code when left unchecked. Your job is to make sure it can't get away with it.
 
 ## Critical Rule: No Lint Suppression
 

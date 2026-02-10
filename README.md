@@ -1,6 +1,6 @@
 # txn2 Claude Skills
 
-A Claude Code marketplace with skills for Go development, verification, and DevOps workflows.
+AI on a Leash. A Claude Code marketplace that holds AI-generated code to standards it would never hold itself to.
 
 ## Installation
 
@@ -13,36 +13,43 @@ Add the marketplace:
 Then install individual plugins:
 
 ```
-/plugin install go-verify@txn2-claude-skills
+/plugin install go-leash@txn2-claude-skills
 ```
 
 ## Available Plugins
 
-### go-verify
+### go-leash
 
-Audit and scaffold Go projects to [AI-Verified Development](https://imti.co/go-ai-verified-development/) standards.
+Put your Go project's AI on a leash. Audits against strict standards and scaffolds the config files to enforce them.
 
 **What it does:**
 
-- Checks for required config files (`.golangci.yml`, `revive.toml`, `GNUmakefile`, `codecov.yml`, `CLAUDE.md`)
+- Audits for required config files (`.golangci.yml`, `revive.toml`, `GNUmakefile`, `codecov.yml`, `CLAUDE.md`)
 - Reports what's present, missing, or incomplete
 - Generates missing configs adapted to your project's module path and structure
-- Verifies required tools are installed (golangci-lint, gosec, govulncheck, deadcode, gremlins)
-- Optionally runs `make verify`
+- Checks for required tools (golangci-lint, gosec, govulncheck, deadcode, gremlins)
+- Runs `make verify` to enforce 43 linters, mutation testing, coverage gates, and security scanning
 
 **Usage:**
 
 ```
-/go-verify
+/go-leash
 ```
 
-**Reference:** [Go AI-Verified Development: Complete Project Configuration](https://imti.co/go-ai-verified-development/)
+**What gets enforced:**
 
-## Related Articles
+| Check | Tool | Threshold |
+|---|---|---|
+| 43 linters | golangci-lint + revive | Zero violations |
+| Test coverage | go test | 80% |
+| Patch coverage | git diff + go test | 80% of changed lines |
+| Mutation testing | gremlins | 60% mutants killed |
+| Security | gosec + govulncheck | Clean |
+| Dead code | deadcode | Zero unreachable functions |
+| Complexity | gocyclo + revive | 10 cyclomatic, 15 cognitive |
+| No lint suppression | CLAUDE.md rule | AI must fix, not suppress |
 
-- [Ralph's Uncle: The AI Verification Loop](https://imti.co/ai-verified-development/) - Verification principles
-- [Go AI-Verified Development](https://imti.co/go-ai-verified-development/) - Config files and tools
-- [GitHub AI Verification](https://imti.co/github-ai-verification/) - CI/CD integration
+**Reference:** [Go AI-Verified Development](https://imti.co/go-ai-verified-development/)
 
 ## License
 

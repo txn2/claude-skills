@@ -1,0 +1,13 @@
+{
+  "name": "go-leash",
+  "version": "1.0.0",
+  "description": "AI on a Leash for Go. Audit and scaffold Go projects with 43 linters, mutation testing, coverage gates, security scanning, and dead code detection. Hold AI-generated code to strict standards.",
+  "author": {
+    "name": "Craig Johnston",
+    "url": "https://imti.co"
+  },
+  "homepage": "https://imti.co/go-ai-verified-development/",
+  "repository": "https://github.com/txn2/claude-skills",
+  "license": "MIT",
+  "keywords": ["go", "golang", "testing", "linting", "ai-on-a-leash", "code-quality"]
+}

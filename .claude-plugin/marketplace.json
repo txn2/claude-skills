@@ -5,15 +5,15 @@
     "url": "https://github.com/txn2"
   },
   "metadata": {
-    "description": "Claude Code skills for Go development, verification, and DevOps workflows",
+    "description": "Claude Code skills: AI on a Leash. Hold AI to strict development standards.",
     "version": "1.0.0",
     "pluginRoot": "./plugins"
   },
   "plugins": [
     {
-      "name": "go-verify",
-      "source": "./plugins/go-verify",
-      "description": "Audit and scaffold Go projects to AI-Verified Development standards",
+      "name": "go-leash",
+      "source": "./plugins/go-leash",
+      "description": "AI on a Leash for Go. Audit and scaffold Go projects with strict linting, mutation testing, coverage gates, and security scanning.",
       "version": "1.0.0",
       "author": {
         "name": "Craig Johnston",
@@ -22,9 +22,9 @@
       "homepage": "https://imti.co/go-ai-verified-development/",
       "repository": "https://github.com/txn2/claude-skills",
       "license": "MIT",
-      "keywords": ["go", "golang", "testing", "linting", "verification", "ai-verified"],
+      "keywords": ["go", "golang", "testing", "linting", "ai-on-a-leash", "code-quality"],
       "category": "code-quality",
-      "tags": ["golangci-lint", "mutation-testing", "coverage"]
+      "tags": ["golangci-lint", "mutation-testing", "coverage", "security"]
     }
   ]
 }
